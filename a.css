@@ -1,0 +1,244 @@
+* {
+    font-family: "General Sans Medium";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main {
+    width: 100%;
+    background-color: black;
+}
+#minicircle{
+    transition: all cubic-bezier(0.19,1,0.22,1) 1s;
+    width:10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+}
+#OST {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    position: relative;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#heading {
+    margin-top: 8%;
+    padding:10px 20px;
+    width: 100%;
+    height: 500px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+
+}
+
+#FH {
+    text-transform: uppercase;
+    font-size: 15vh;
+}
+#SH {
+    padding-top:40px;
+    height: 40px;
+    width: fit-content;
+    margin-left: 15vw;
+    
+}
+
+#SH h1 {
+    text-transform: uppercase;
+    font-size: 15vh;
+    line-height: 0px;
+}
+
+#SH h5 {
+    /* background-color: yellow; */
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1vw;
+    padding-top: 70px;
+}
+
+#ch {
+    margin-top: 150px;
+    text-align: right;
+    padding-right: 30px;
+    margin-bottom: 80px;
+
+}
+
+#ch h5 {
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+#OSTFOOTER {
+    position: relative;
+    padding: 0 2vw;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#OSTFOOTER a {
+    text-decoration: none;
+    color: white;
+}
+
+#iconset {
+    display: flex;
+}
+.bounding{
+    width:fit-content;
+    overflow: hidden;
+} 
+.bounding .bounelem{
+    transform: translateY(100%);
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+#SECOND {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 200px 4vw 0;
+
+}
+
+.elem {
+    height: 150px;
+    position: relative;
+    width: 100%;
+    padding: 3vw;
+    border-top: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.elem h1, .elem h5 {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.elemlast {
+    border-bottom: 1px solid #888;
+    /* margin-bottom: 30px; */
+}
+
+/*.elem img {
+    display: none; 
+    position: absolute;
+    z-index: 999;
+    height: 150%;
+    opacity:0; 
+ } */
+ .elem img {
+    position: absolute;
+    z-index: 999;
+    height: 150%;
+    opacity: 0; /* Hidden initially */
+    pointer-events: none; /* Prevents unwanted interaction */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+#THIRD {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    gap: 50px;
+    padding: 10vw 10vw 10vw 40vw;
+    
+}
+
+#imgabout img {
+    margin-top: 20px;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#tabout {
+    width: 30rem;
+}
+
+#tabout h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: larger;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+#tabout p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#tabout a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    padding: 12px 22px;
+}
+
+#FOURTH {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    margin-bottom: 80px;
+}
+
+#FOURTH h5 {
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: large;
+}
+
+#FOURTH a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
+#FOOTER {
+    background-color: black;
+    padding: 20px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lf, #rf {
+    display: flex;
+    gap: 25px;
+}
